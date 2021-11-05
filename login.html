@@ -1,105 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/marca.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/marca.png" type="image/x-icon" />
     <title>MasalaEcotienda</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav id="nav" class="nav-bar">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a> 
-                </li>
-                <li>
-                    <a href="products.html">Products</a> 
-                </li>
-                <li>
-                    <a href="aboutus.html">Aboutus</a> 
-                </li>
-                <li>
-                    <a href="contactus.html">Contacus</a>
-                </li>
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
-            </ul>
-        </nav><hr><br>
+      <nav id="nav" class="nav-bar">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="aboutus.html">Aboutus</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contacus</a>
+          </li>
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <br />
     </header>
-    
+
     <main>
-        <div>
+      <div>
+        <form>
+          <fieldset>
+            <legend>Ingresar</legend>
+
             <form>
-                <fieldset>
-                    <legend>Ingresar</legend>                
-                       
-            <form>
-                    <label for="correouser">Email:</label>
-                    <input type="email" id="correouser" name="correoingreso" placeholder="usuario@correo.com" required>
-                    <br>
-                    <label for="claveuser">Password:</label>
-                    <input type="password" id="claveuser" name="claveingreso" placeholder="*********" required>
-                    
+              <label for="correouser">Email:</label>
+              <input
+                type="email"
+                id="correouser"
+                name="correoingreso"
+                placeholder="usuario@correo.com"
+                required
+              />
+              <br />
+              <label for="claveuser">Password:</label>
+              <input
+                type="password"
+                id="claveuser"
+                name="claveingreso"
+                placeholder="*********"
+                required
+              />
             </form>
-            <br>
-                <span> <a href="#">¿Olvide mi contraseña?</a></span>
-                <br>
-                    <div> 
-                        <button type="submit">acceder</button>
-                    </div>                                      
-                </fieldset>
-            </form>
-            </form>
-            </div>
-            
-            <br>
-            <br>
-            
+            <br />
+            <span> <a href="#">¿Olvide mi contraseña?</a></span>
+            <br />
             <div>
-                <form>
-                    <fieldset>
-                        <legend>Registrate</legend>                
-                <form>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombreregistro" placeholder="Ingrese su nombre" required>
-                        <br>
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellidoregistro" placeholder="Ingrese su apellido" required>
-                        <br>
-                        <label for="correo">Email:</label>
-                        <input type="email" id="correo" name="correoregisto" placeholder="usuario@correo.com" required>
-                        <br>
-                        <label for="clave">Password:</label>
-                        <input type="password" id="clave" name="claveregistro" placeholder="*********" required>
-                        <br>
-                        <label for="confclave">Confirmar Password:</label>
-                        <input type="password" id="confclave" name="confclaveregistro" placeholder="*********" required>
-                        <br>
-                </form>
-                <form>
-                        <div>Aceptar terminos y condiciones</div>
-                        <input  type="checkbox" name="aceptar" value="1"/>
-                </form>
-                        <div> <br>
-                            <button type="submit">Registrar</button>
-                        </div>                                      
-                    </fieldset>
-                </form>
-                </form>
-                </div>
-        
-        <br>
+              <button type="submit">acceder</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <form>
+          <fieldset>
+            <legend>Registrate</legend>
+            <form>
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombreregistro"
+                placeholder="Ingrese su nombre"
+                required
+              />
+              <br />
+              <label for="apellido">Apellido:</label>
+              <input
+                type="text"
+                id="apellido"
+                name="apellidoregistro"
+                placeholder="Ingrese su apellido"
+                required
+              />
+              <br />
+              <label for="correo">Email:</label>
+              <input
+                type="email"
+                id="correo"
+                name="correoregisto"
+                placeholder="usuario@correo.com"
+                required
+              />
+              <br />
+              <label for="clave">Password:</label>
+              <input
+                type="password"
+                id="clave"
+                name="claveregistro"
+                placeholder="*********"
+                required
+              />
+              <br />
+              <label for="confclave">Confirmar Password:</label>
+              <input
+                type="password"
+                id="confclave"
+                name="confclaveregistro"
+                placeholder="*********"
+                required
+              />
+              <br />
+            </form>
+            <form>
+              <span>Aceptar terminos y condiciones</span>
+              <input type="checkbox" name="aceptar" value="1" />
+            </form>
+            <div>
+              <br />
+              <button type="submit">Registrar</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <br />
     </main>
 
-    <footer><hr>
-        <div>
-            <h3>Copyrigth</h3>
-        </div>
+    <footer>
+      <hr />
+      <div>
+        <ul>
+          <h3>Seguinos en:</h3>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <span>
+        <h3>Copyrigth</h3>
+      </span>
     </footer>
-
-</body>
+  </body>
 </html>
