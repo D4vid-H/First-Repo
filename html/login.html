@@ -6,28 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/marca.png" type="image/x-icon" />
     <title>MasalaEcotienda</title>
+    <!-- Icon Footer-->
+    <link href="https://css.gg/twitter.css" rel="stylesheet" />
+    <link href="https://css.gg/instagram.css" rel="stylesheet" />
+    <link href="https://css.gg/facebook.css" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <header>
-      <nav id="nav" class="nav-bar">
-        <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-          <li>
-            <a href="products.html">Products</a>
-          </li>
-          <li>
-            <a href="aboutus.html">Aboutus</a>
-          </li>
-          <li>
-            <a href="contactus.html">Contacus</a>
-          </li>
-          <li>
-            <a href="login.html">Login</a>
-          </li>
-        </ul>
+      <nav id="nav">
+        <div class="nav_bar">
+          <div class="nav_contenido">
+            <ul class="submenu">
+              <li>
+                <a href="#">Categoria</a>
+                <ul>
+                  <li><a href="#">Yerbas</a></li>
+                  <li><button type="menu">Cereales</button></li>
+                  <li><button type="menu">Legumbres</button></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Links</a>
+                <ul>
+                  <li><button type="menu">Bolsa de cereales</button></li>
+                  <li><button type="menu">noticias</button></li>
+                  <li><button type="menu">blog</button></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="container_icon">
+            <img src="../img/marca2.png" alt="logotipo" />
+          </div>
+          <div class="contain_menu">
+            <ul>
+              <li>
+                <a href="../index.html">Home</a>
+              </li>
+              <li>
+                <a href="products.html">Products</a>
+              </li>
+              <li>
+                <a href="aboutus.html">About Us</a>
+              </li>
+              <li>
+                <a href="contactus.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <hr />
       <br />
@@ -138,16 +169,37 @@
     </main>
 
     <footer>
-      <hr />
-      <div>
-        <ul>
-          <h3>Seguinos en:</h3>
-          <li><a href="https://www.facebook.com">Facebook</a></li>
-          <li><a href="https://www.instagram.com">Instagram</a></li>
-          <li><a href="https://twitter.com">Twitter</a></li>
-        </ul>
+      <div class="container_footer">
+        <div class="container_legal">
+          <ul>
+            <li><a href="#">Terminos y condiciones</a></li>
+            <li><a href="#">Legales</a></li>
+            <li><a href="contactus.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="container_socicon">
+          <ul class="contain_social">
+            <h3>Seguinos</h3>
+            <li>
+              <a href="https://www.facebook.com"><i class="gg-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><i class="gg-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com"><i class="gg-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="container_icon_foot">
+          <img src="../img/marca2.png" alt="logotipo" />
+        </div>
       </div>
-      <span>&copy;Copyrigth</span>
+      <div class="container_copyR">
+        <p>&copy;Copyrigth</p>
+      </div>
     </footer>
   </body>
 </html>
