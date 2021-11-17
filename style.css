@@ -21,7 +21,7 @@ body {
 #page {
   max-width: 100%;
   min-width: 10%;
-  background-color: #f2f1ec;
+  background-color: #ffffff;
 }
 
 /*Navegacion*/
@@ -63,6 +63,9 @@ ul.submenu li {
   font-size: 14px;
   border-left: 1px solid white;
   border-right: 1px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 ul.submenu ul {
   position: absolute;
@@ -92,13 +95,6 @@ div.nav_contenido {
   height: 30px;
   justify-content: end;
   background: grey;
-}
-
-div.nav_contenido ul li a:link {
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  text-decoration-line: none;
 }
 
 /*Navegacion WEB*/
@@ -168,11 +164,6 @@ span.titulo {
   padding-top: 25px;
   font-size: 30px;
 }
-
-/*div.container_ofer {
-  display: flex;
-  flex-flow: row wrap;
-}*/
 
 div.container_ofer ul {
   display: flex;
