@@ -23,26 +23,6 @@
     <header>
       <nav id="nav">
         <div class="nav_bar">
-          <div class="nav_contenido">
-            <ul class="submenu">
-              <li>
-                <a href="#">Categoria</a>
-                <ul>
-                  <li><a href="#">Yerbas</a></li>
-                  <li><button type="menu">Cereales</button></li>
-                  <li><button type="menu">Legumbres</button></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Links</a>
-                <ul>
-                  <li><button type="menu">Bolsa de cereales</button></li>
-                  <li><button type="menu">noticias</button></li>
-                  <li><button type="menu">blog</button></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
           <div class="container_icon">
             <img src="../img/marca2.png" alt="logotipo" />
           </div>
@@ -58,7 +38,7 @@
                 <a href="aboutus.html">About Us</a>
               </li>
               <li>
-                <a href="contactus.html">Contact Us</a>
+                <a href="contactus.html">Contact</a>
               </li>
               <li>
                 <a href="login.html">Login</a>
@@ -70,69 +50,103 @@
       <hr />
     </header>
     <main>
-      <section class="contact">
+      <section>
         <form>
-          <fieldset>
+          <fieldset class="contact">
             <legend>Contactanos</legend>
-            <form>
-              <div>Cliente
-              <input type="radio" name="cliente" value="cliente" />
-            </div>
-              <div>No cliente
-              <input type="radio" name="cliente" value="nocliente" />
-            </div>
-            </form>
-            <form>
-              <label for="nombre">Nombre:</label>
-              <input
-                type="text"
-                id="nombre"
-                name="nombreusuario"
-                placeholder="Ingrese su nombre"
-                required
-              />
-              <br />
-              <label for="correo">Email:</label>
-              <input
-                type="email"
-                id="correo"
-                name="correoelectronico"
-                placeholder="usuario@correo.com"
-                required
-              />
-            </form>
-            <form>
-              <br />
-              <input type="reset" value="Limpiar Formulario" />
-              <textarea
-                rows="12"
-                cols="24"
-                value="dejanos tu comentarios"
-              ></textarea>
-            </form>
-            <form>
-              <div>Aceptar terminos y condiciones</div>
-              <input type="checkbox" name="aceptar" value="1" />
-            </form>
-            <div>
-              <br />
-              <button type="submit">Enviar</button>
+            <div class="containFrom">
+              <form>
+                <div class="containRadio">
+                  <span>
+                    Cliente
+                    <input type="radio" name="cliente" value="cliente" />
+                  </span>
+                  <span>
+                    No cliente
+                    <input type="radio" name="cliente" value="nocliente" />
+                  </span>
+                </div>
+              </form>
+              <form>
+                <div class="containText">
+                  <label for="nombre">Nombre:</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombreusuario"
+                    placeholder="Ingrese su nombre"
+                    required
+                  />
+                </div>
+                <div class="containText">
+                  <label for="nombre">Ciudad:</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombreciudad"
+                    placeholder="Ingrese su ciudad"
+                    required
+                  />
+                </div>
+
+                <div class="containText">
+                  <label for="correo">Email:</label>
+                  <input
+                    type="email"
+                    id="correo"
+                    name="correoelectronico"
+                    placeholder="usuario@correo.com"
+                    required
+                  />
+                </div>
+              </form>
+              <form>
+                <div class="containBoxText">
+                  <textarea
+                    rows="15"
+                    cols="140"
+                    value="dejanos tu comentarios"
+                    placeholder="Dejanos tu inquietud"
+                  ></textarea>
+                </div>
+                <div class="containLimpForm">
+                  <input type="reset" value="Limpiar Formulario" />
+                </div>
+              </form>
+              <form>
+                <p class="containCheckbox">Aceptar terminos y condiciones</p>
+                <div class="containCheckbox">
+                  <input type="checkbox" name="aceptar" value="1" />
+                </div>
+              </form>
+              <div class="containBtm">
+                <button type="submit">Enviar</button>
+              </div>
             </div>
           </fieldset>
         </form>
       </section>
       <section id="secIframMap">
         <div class="containWatsapp">
-          <img src="../img/whatsapp1.png" alt="logo whatsapp">
-          <span><p>0123456789</p></span>
-        <div>
-          <p>Direccion: Mi direccion 1234</p>
-          <p>Barrio: Mi Barrio</p>
-          <p>C P: xXx1234</p>
+          <div class="containdireccion">
+            <img src="../img/whatsapp1.png" alt="logo whatsapp" />
+            <span class="numeroWhatsapp"><p>0123456789</p></span>
+          </div>
+          <div class="alineacion">
+            <p>Direccion: Mi direccion 1234</p>
+            <p>Barrio: Mi Barrio</p>
+            <p>C P: xXx1234</p>
+          </div>
         </div>
-      </div>
-        <div Class="googleMapsIfram">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d983.4355213678253!2d-64.1886588466418!3d-31.419729967624644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1637302948242!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="googleMapsIfram">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d983.4355213678253!2d-64.1886588466418!3d-31.419729967624644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1637302948242!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
     </main>
