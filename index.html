@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/marca.png" type="image/x-icon" />
     <title>MasalaEcotienda</title>
-    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styleGrid.css" />-->
+    <link rel="stylesheet" href="responsive.css" />
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Architects+Daughter&family=Cookie&family=Dancing+Script&family=Indie+Flower&family=Noto+Sans&family=Pontano+Sans&family=Raleway&family=Roboto&display=swap"
       rel="stylesheet"
     />
+
+    <style type="text/css" media="screen, print">
+      @font-face {
+        font-family: "BT Trial";
+        src: url("font/BTTTRIAL.otf");
+      }
+      </style>
+
     <!-- Icon Footer-->
     <link href="https://css.gg/twitter.css" rel="stylesheet" />
     <link href="https://css.gg/instagram.css" rel="stylesheet" />
@@ -21,14 +31,12 @@
   </head>
 
   <body>
-    <div id="page">
-      <header id="encabezado">
-        <nav id="nav">
-          <div class="nav_bar">
-            <div class="container_icon">
-              <img src="img/marca2.png" alt="logotipo" />
+    <div id="grilla">
+      <nav id="nave" class="flexiblerow">
+          
+            <div class="contenedorImagen">
+              <img src="../img/marca2.png" alt="logotipo" class="marcaUno"/>
             </div>
-            <div class="contain_menu">
               <ul>
                 <li>
                   <a href="index.html">home</a>
@@ -46,194 +54,196 @@
                   <a href="html/login.html">login</a>
                 </li>
               </ul>
-            </div>
-          </div>
+              <div class="contenedorImagenDos">
+                <img src="../img/marca5.png" alt="logotipo" class="marcaDos"/>
+              </div>
         </nav>
-        <div class="container_banner">
+      <header id="encabezado">
+        <div class="contenedorBanner">
           <img src="img/fondo1.jpg" alt="banner" />
         </div>
       </header>
       <main id="cuerpo">
-        <section class="ofertas">
-          <span class="titulo"><h1>Promociones</h1></span>
-          <div class="container_ofer">
-            <ul>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+        <section class="seccionUno">
+          <h1>Promociones</h1>
+            <ul Class="listaUl">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img src="img/Yerba.jpg" alt="imagen de yerba mate" />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Yerbas:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img
                       src="img/cereales.jpg"
                       alt="imagen de distintos cereales"
                     />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Cereales:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img
                       src="img/especias.jpg"
                       alt="imagen de distintas especies"
                     />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Especias:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img
                       src="img/legumbres.jpg"
                       alt="imagen de distintas legumbres"
                     />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Legumbres:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img
                       src="img/semillas.jpg"
                       alt="imagen de distintas semillas"
                     />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Semillas:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
               <!--  Prueba  -->
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img src="img/Yerba.jpg" alt="imagen de yerba mate" />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Yerbas:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img
                       src="img/cereales.jpg"
                       alt="imagen de distintos cereales"
                     />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Cereales:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img
                       src="img/especias.jpg"
                       alt="imagen de distintas especies"
                     />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Especias:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img
                       src="img/legumbres.jpg"
                       alt="imagen de distintas legumbres"
                     />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Legumbres:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
-              <li>
-                <div class="container__ofer--position">
-                  <div class="container__ofer--imagen">
+              <li class="elementoLi">
+                <div class="contenedorImgText">
+                  <div class="contenedorImagen">
                     <img
                       src="img/semillas.jpg"
                       alt="imagen de distintas semillas"
                     />
                   </div>
-                  <span class="container__text">
+                  <div class="contenedorTexto">
                     <h2>Semillas:</h2>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Facilis, impedit.
                     </p>
-                  </span>
+                  </div>
                 </div>
               </li>
               <!--  Prueba  -->
             </ul>
-          </div>
+          
         </section>
-        <div class="contain_difsec">
+        <div class="contenedorBanner">
           <img src="img/banner2.jpg" alt="frutos secos" />
         </div>
-        <section class="iframe">
-          <div class="containSectionIframe">
-            <h2>¿Como se obtienen los productos organicos?</h2>
-            <div class="container__text--art2">
+        <section class="seccionDos">
+          <div class="contenedorImgText">
+            
+            <div class="contenedorTexto">
+              <h2>¿Como se obtienen los productos organicos?</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Officiis reprehenderit, asperiores eum ipsam vel beatae
@@ -244,11 +254,10 @@
                 consequuntur autem culpa. Delectus, nulla?
               </p>
             </div>
-          </div>
-          <div class="containSectionIframe">
-            <div class="container_ifram">
+          
+            <div class="contenedorImagen">
               <iframe
-                width="1280"
+                width="600"
                 height="720"
                 src="https://www.youtube.com/embed/6K1a7lhDLbM"
                 title="YouTube video player"
@@ -261,18 +270,17 @@
         </section>
       </main>
 
-      <footer>
-        <div class="containBackground">
-          <div class="container_footer">
-            <ul class="container_legal">
-              <li><a href="#">Terminos y condiciones</a></li>
+      <footer id="pie">
+        
+            <ul class="flexiblecolum filaUno">
+              <li><a href="#">Terminos</a></li>
               <li><a href="#">Legales</a></li>
               <li><a href="html/contactus.html">Contacto</a></li>
             </ul>
 
-            <ul class="contain_social">
+            <ul class="flexiblecolum filaDos">
               <h3>Seguinos</h3>
-              <div class="contain_socicon">
+              <div class="flexiblerow">
                 <li>
                   <a href="https://www.facebook.com"
                     ><i class="gg-facebook"></i
@@ -289,14 +297,15 @@
               </div>
             </ul>
 
-            <div class="container_icon_foot">
-              <img src="../img/marca2.png" alt="logotipo" />
+            <div class="contenedorImagen filaTres">
+              <img src="../img/marca2.png" alt="logotipo" class="imgUno"/>
+              <img src="../img/marca5.png" alt="logotipo" class="imgDos"/>
             </div>
-          </div>
-          <div class="container_copyR">
+          
+          <div class="filaCuatro">
             <h4>&copy;Copyrigth</h4>
           </div>
-        </div>
+        
       </footer>
     </div>
   </body>

@@ -17,46 +17,48 @@
     <link href="https://css.gg/twitter.css" rel="stylesheet" />
     <link href="https://css.gg/instagram.css" rel="stylesheet" />
     <link href="https://css.gg/facebook.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css" />
+    <!--<link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styleGrid.css" />-->
+    <link rel="stylesheet" href="../responsive.css" />
   </head>
   <body>
-    <div id="products">
-      <header>
-        <nav id="nav">
-          <div class="nav_bar">
-            <div class="container_icon">
-              <img src="../img/marca2.png" alt="logotipo" />
-            </div>
-            <div class="contain_menu">
-              <ul>
-                <li>
-                  <a href="../index.html">Home</a>
-                </li>
-                <li>
-                  <a href="products.html">Products</a>
-                </li>
-                <li>
-                  <a href="aboutus.html">About Us</a>
-                </li>
-                <li>
-                  <a href="contactus.html">Contact</a>
-                </li>
-                <li>
-                  <a href="login.html">Login</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div class="container_banner">
-          <img src="../img/fondo2.jpg" alt="banner" />
+    <div id="grilla">
+      <nav id="nav" class="flexiblerow">
+          
+        <div class="contenedorImagen">
+          <img src="../img/marca2.png" alt="logotipo" />
         </div>
-      </header>
-      <main>
-        <div class="container_category">
-          <aside id="category">
-            <span><h2>Categorias</h2></span>
-            <ul class="container_list">
+       
+          <ul>
+            <li>
+              <a href="../index.html">home</a>
+            </li>
+            <li>
+              <a href="products.html">products</a>
+            </li>
+            <li>
+              <a href="aboutus.html">about us</a>
+            </li>
+            <li>
+              <a href="contactus.html">contact</a>
+            </li>
+            <li>
+              <a href="login.html">login</a>
+            </li>
+          </ul>
+        
+     
+    </nav>
+  <header id="encabezado">
+    <div class="contenedorBanner">
+      <img src="../img/fondo1.jpg" alt="banner" />
+    </div>
+  </header>
+      <main id="cuerpoProd">
+        <div >
+          <aside class="containAside">
+            <h2>Categorias</h2>
+            <ul >
               <li>
                 <a href="#">regionales</a>
               </li>
@@ -92,12 +94,85 @@
               </li>
             </ul>
           </aside>
-          <hr />
           <section>
-            <span><h2>Listado</h2></span>
-            <div class="container_ofer" class="container_article">
-              <div id="art_frutosSecos">
+            <h2>Listado</h2>
+            <div >
+              <div >
                 <ul>
+                  <li>
+                    <div class="seccionPromo">
+                      <div class="contenedorImagen">
+                        <img src="../img/Yerba.jpg" alt="imagen de yerba mate" />
+                      </div>
+                      <span >
+                        <h2>Yerbas:</h2>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/regionales.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>productos regionales</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/frsecos.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>frutos secos</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/legumbres.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>legumbres</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/semillas.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>semillas</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="frutoSec">
+                <ul class="artGrid">
                   <li>
                     <div class="container__ofer--position">
                       <div class="container__ofer--imagen">
@@ -170,8 +245,8 @@
                   </li>
                 </ul>
               </div>
-              <div id="art_frutosSecos">
-                <ul>
+              <div id="frutoDesec">
+                <ul class="artGrid">
                   <li>
                     <div class="container__ofer--position">
                       <div class="container__ofer--imagen">
@@ -244,8 +319,8 @@
                   </li>
                 </ul>
               </div>
-              <div id="art_frutosSecos">
-                <ul>
+              <div id="semillas">
+                <ul class="artGrid">
                   <li>
                     <div class="container__ofer--position">
                       <div class="container__ofer--imagen">
@@ -318,8 +393,8 @@
                   </li>
                 </ul>
               </div>
-              <div id="art_frutosSecos">
-                <ul>
+              <div id="cereales">
+                <ul class="artGrid">
                   <li>
                     <div class="container__ofer--position">
                       <div class="container__ofer--imagen">
@@ -392,8 +467,8 @@
                   </li>
                 </ul>
               </div>
-              <div id="art_frutosSecos">
-                <ul>
+              <div id="legumbres">
+                <ul class="artGrid">
                   <li>
                     <div class="container__ofer--position">
                       <div class="container__ofer--imagen">
@@ -466,8 +541,8 @@
                   </li>
                 </ul>
               </div>
-              <div id="art_frutosSecos">
-                <ul>
+              <div id="harinas">
+                <ul class="artGrid">
                   <li>
                     <div class="container__ofer--position">
                       <div class="container__ofer--imagen">
@@ -540,8 +615,82 @@
                   </li>
                 </ul>
               </div>
-              <div id="art_frutosSecos">
-                <ul>
+              <div id="especias">
+                <ul class="artGrid">
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/Yerba.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>yerba</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/regionales.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>productos regionales</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/frsecos.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>frutos secos</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/legumbres.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>legumbres</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container__ofer--position">
+                      <div class="container__ofer--imagen">
+                        <img src="../img/semillas.jpg" alt="imgpro1" />
+                      </div>
+                      <span class="container__text">
+                        <h3>semillas</h3>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Facilis, impedit.
+                        </p>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="regionales">
+                <ul class="artGrid">
                   <li>
                     <div class="container__ofer--position">
                       <div class="container__ofer--imagen">
@@ -619,40 +768,42 @@
         </div>
       </main>
       <footer>
-        <div class="containBackground">
-          <div class="container_footer">
-            <ul class="container_legal">
-              <li><a href="#">Terminos y condiciones</a></li>
-              <li><a href="#">Legales</a></li>
-              <li><a href="contactus.html">Contacto</a></li>
-            </ul>
-            <ul class="contain_social">
-              <h3>Seguinos</h3>
-              <div class="contain_socicon">
-                <li>
-                  <a href="https://www.facebook.com"
-                    ><i class="gg-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com"
-                    ><i class="gg-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com"><i class="gg-twitter"></i></a>
-                </li>
-              </div>
-            </ul>
-            <div class="container_icon_foot">
-              <img src="../img/marca2.png" alt="logotipo" />
-            </div>
+        
+          
+        <ul class="flexiblecolum alineFooter">
+          <li><a href="#">Terminos y condiciones</a></li>
+          <li><a href="#">Legales</a></li>
+          <li><a href="contactus.html">Contacto</a></li>
+        </ul>
+
+        <ul class="flexiblecolum">
+          <h3>Seguinos</h3>
+          <div class="flexiblerow">
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="gg-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><i class="gg-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com"><i class="gg-twitter"></i></a>
+            </li>
           </div>
-          <div class="container_copyR">
-            <h4>&copy;Copyrigth</h4>
-          </div>
+        </ul>
+
+        <div class="contenedorImagen">
+          <img src="../img/marca2.png" alt="logotipo" />
         </div>
-      </footer>
+      
+      <div class="fila2">
+        <h4>&copy;Copyrigth</h4>
+      </div>
+    
+  </footer>
     </div>
   </body>
 </html>

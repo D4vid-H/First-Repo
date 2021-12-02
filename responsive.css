@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#grilla {
+    
+    display: grid;
+    background-color: darkgrey;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+li a:link{
+    color: white;
+    text-decoration: none;    
+}
+
+.flexiblecolum{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flexiblerow{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    #grilla{
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 300px 4210px 200px;
+        grid-template-areas: "nav"
+                             "header"
+                             "main"
+                             "footer";
+       background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           
+    }
+
+    
+    #nave li a:link{
+        font-size: 20px;
+        font-family: "BT Trial";
+        text-transform: capitalize;
+        letter-spacing: 7px;
+        
+    }
+
+    #nave ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+
+    }
+
+    #nave {
+        grid-area:nav;
+        align-content: flex-start;
+    }
+
+    #nave .contenedorImagen{
+        width: 50%;
+    }
+
+    #nave .contenedorImagenDos{
+        display: none;
+    }
+    
+    #nave ul li{
+        text-align: center;
+    }
+
+    #encabezado{
+        grid-area:header;
+        display: flex;
+        align-items: center;
+    }
+    
+    #encabezado .contenedorBanner{
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box; 
+        border: 2px solid aliceblue; 
+    }
+
+    #cuerpo{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 3045px 230px 935px;
+        grid-template-areas: "seccion1"
+                             "banner"
+                             "seccion2";
+        align-items: center;
+        justify-items: center;
+    }
+
+    .seccionUno{
+        grid-area: seccion1;
+        text-align: center;
+
+    }
+    
+    .listaUl{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(10, 300px);
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .elementoLi .contenedorImgText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .elementoLi .contenedorImgText .contenedorImagen{
+
+        width: 100%;
+        height: 200px;
+    }
+
+    .elementoLi .contenedorImgText .contenedorTexto{
+        text-align: justify;
+        
+        font-family: 'Abhaya Libre', serif;
+        font-size: 16px;
+    }
+
+    #cuerpo .contenedorBanner{
+        grid-area: banner;
+        height: 200px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 2%;       
+    }
+
+    #cuerpo .contenedorBanner img{
+        width: 100%;
+    }
+
+    .seccionDos{
+        grid-area: seccion2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seccionDos .contenedorImgText{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        width: 98%;
+        height: 100%;
+    }
+
+    .seccionDos .contenedorImgText .contenedorTexto{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30%;
+        text-align: justify;
+        align-items: center;
+    }
+
+    .seccionDos .contenedorImgText .contenedorTexto h2{
+
+        text-align: center;
+        font-family: 'Pontano Sans', sans-serif;
+        
+    }
+
+    .seccionDos .contenedorImgText .contenedorImagen{
+
+        width: 100%;
+        height: 70%;
+
+    }
+
+    .seccionDos .contenedorImgText .contenedorImagen iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #pie{
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 85% 15%;
+        grid-template-areas:    "fila1 fila2 fila3"
+                                "fila4 fila4 fila4" ;
+        
+    }
+
+    #pie .filaUno{
+       grid-area: fila1;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+    }
+
+    #pie ul li a:link{
+
+        font-size: 13px;
+        color: black;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #pie .filaDos{
+        grid-area: fila2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    #pie .filaDos h3{
+        color: blue;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    #pie .filaDos .flexiblerow{
+        justify-content: space-around;
+    }
+
+
+    #pie .filaTres{
+        grid-area: fila3;
+    }
+    #pie .contenedorImagen .imgDos{
+        display: none;
+    }
+
+    .filaCuatro{
+        grid-area:fila4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(201, 25, 25);
+    }
+    .filaCuatro h4{
+      
+        color: whitesmoke;
+        
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+
+    #grilla{
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 100px 2700px 200px;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "footer";
+        background-color: peru;
+    }
+    
+    
+    #encabezado{
+        grid-area: header;
+        display: flex;
+        align-items: center;
+    }
+    
+    #encabezado .contenedorBanner{
+        width: 100%;
+        height: 350px;
+        box-sizing: border-box;
+        
+    }
+    #encabezado .contenedorBanner img{
+
+        border-radius: 3%;
+    }
+
+    #nave li a:link{
+        font-size: 20px;
+        font-family: 'Noto Sans', sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 3px;        
+    }
+
+    #nave{
+        grid-area: nav;
+        background-color: powderblue;
+    }
+
+    #nave ul{
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #nave .contenedorImagen{
+        width: 100px;
+        height: 100px;
+    }
+
+    #nave .contenedorImagenDos{
+        display: none;
+    }
+    
+    #cuerpo{
+        grid-area: main;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1500px 300px 900px;
+        grid-template-areas:    "seccion1 seccion1"
+                                "banner banner"
+                                "seccion2 seccion2";
+
+    }
+
+    .seccionUno{
+        grid-area: seccion1;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .seccionUno .listaUl{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: repeat(5, 300px);
+        column-gap: 4%;
+        width: 92%;
+    }
+
+    
+    .elementoLi .contenedorImgText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .elementoLi .contenedorImgText .contenedorImagen{
+
+        width: 100%;
+        height: 200px;
+    }
+
+    .elementoLi .contenedorImgText .contenedorTexto{
+        text-align: justify;
+        
+        font-family: 'Abhaya Libre', serif;
+        font-size: 16px;
+    }
+
+    .contenedorBanner{
+        grid-area: banner;
+        width: 100%;
+    }
+
+    .contenedorBanner img{
+        object-fit: contain;
+    }
+
+    .seccionDos{
+        grid-area: seccion2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seccionDos .contenedorImgText{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 98%;
+        height: 100%;
+    }
+
+    .seccionDos .contenedorImgText .contenedorTexto{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30%;
+        text-align: justify;
+        align-items: center;
+    }
+
+    .seccionDos .contenedorImgText .contenedorTexto h2{
+
+        text-align: center;
+        font-family: 'Pontano Sans', sans-serif;
+        
+    }
+
+    .seccionDos .contenedorImgText .contenedorImagen{
+
+        width: 100%;
+        height: 70%;
+
+    }
+
+    .seccionDos .contenedorImgText .contenedorImagen iframe{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    #pie{
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 85% 15%;
+        grid-template-areas:    "fila1 fila2 fila3"
+                                "fila4 fila4 fila4" ;
+        
+    }
+
+    #pie .filaUno{
+       grid-area: fila1;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+    }
+
+    #pie ul li a:link{
+
+        font-size: 13px;
+        color: black;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #pie .filaDos{
+        grid-area: fila2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    #pie .filaDos h3{
+        color: blue;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    #pie .filaDos .flexiblerow{
+        justify-content: space-around;
+    }
+
+    #pie .contenedorImagen{
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #pie .contenedorImagen img{
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+    }
+    #pie .contenedorImagen .imgUno{
+        display: none;
+    }
+    
+    #pie .filaTres{
+        grid-area: fila3;
+        
+    }
+
+    .filaCuatro{
+        grid-area:fila4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(201, 25, 25);
+    }
+    .filaCuatro h4{
+      
+        color: whitesmoke;
+        
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 1200px){
+
+   #grilla{
+    grid-template-columns: 30% 30% 30% 10%;
+    grid-template-rows: 250px 400px 2700px 200px;
+    grid-template-areas: "nav nav nav nav"
+                         "header header header header "
+                         "main main main main"
+                         "footer footer footer footer ";
+
+    background-color: blue;
+   }
+
+   #nave li a:link{
+    font-size: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 3px;        
+}
+
+    #nave{
+    grid-area: nav;
+    background-color: rgb(155, 156, 156);
+}
+
+    #nave ul{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    #nave .contenedorImagen{
+    width: 300px;
+    height: 250px;
+}
+    #nave .contenedorImagenDos{
+        width: 500px;
+        height: 250px;
+    }
+    
+    #nave .contenedorImagenDos img{
+        object-fit: contain;
+    }
+
+   #encabezado{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+}
+
+    #encabezado .contenedorBanner{
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    
+}
+    #encabezado .contenedorBanner img{
+
+    border-radius: 3%;
+}
+
+
+
+}
