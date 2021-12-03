@@ -112,13 +112,15 @@ img{
         justify-items: center;
     }
 
-    .seccionUno{
+    #cuerpo .seccionUno{
         grid-area: seccion1;
         text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
 
     }
     
-    .seccionUno .listaUl{
+    #cuerpo .seccionUno .listaUl{
         display: grid;
         grid-template-columns: 80%;
         grid-template-rows: repeat(10, 300px);
@@ -127,20 +129,20 @@ img{
 
     }
 
-    .elementoLi .contenedorImgText{
+    #cuerpo .elementoLi .contenedorImgText{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
 
-    .elementoLi .contenedorImgText .contenedorImagen{
+    #cuerpo .elementoLi .contenedorImgText .contenedorImagen{
 
         width: 100%;
         height: 200px;
     }
 
-    .elementoLi .contenedorImgText .contenedorTexto{
+    #cuerpo .elementoLi .contenedorImgText .contenedorTexto{
         text-align: justify;
         
         font-family: 'Abhaya Libre', serif;
@@ -159,7 +161,7 @@ img{
         width: 100%;
     }
 
-    .seccionDos{
+    #cuerpo .seccionDos{
         grid-area: seccion2;
         width: 100%;
         height: 100%;
@@ -167,7 +169,7 @@ img{
         justify-content: center;
     }
 
-    .seccionDos .contenedorImgText{
+    #cuerpo .seccionDos .contenedorImgText{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
@@ -175,7 +177,7 @@ img{
         height: 100%;
     }
 
-    .seccionDos .contenedorImgText .contenedorTexto{
+    #cuerpo .seccionDos .contenedorImgText .contenedorTexto{
 
         display: flex;
         flex-direction: column;
@@ -185,21 +187,21 @@ img{
         align-items: center;
     }
 
-    .seccionDos .contenedorImgText .contenedorTexto h2{
+    #cuerpo .seccionDos .contenedorImgText .contenedorTexto h2{
 
         text-align: center;
         font-family: 'Pontano Sans', sans-serif;
         
     }
 
-    .seccionDos .contenedorImgText .contenedorImagen{
+    #cuerpo .seccionDos .contenedorImgText .contenedorImagen{
 
         width: 100%;
         height: 70%;
 
     }
 
-    .seccionDos .contenedorImgText .contenedorImagen iframe{
+    #cuerpo .seccionDos .contenedorImgText .contenedorImagen iframe{
         width: 100%;
         height: 100%;
     }
@@ -514,6 +516,172 @@ img{
     background-color: slategrey;
     font-size: 20px;
   }
+
+/*------------main contact--------------------------------*/
+
+#grillaContact{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 300px 1500px 200px;
+    grid-template-areas: "nav"
+                         "header"
+                         "main"
+                         "footer";
+
+    background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); 
+
+
+}
+
+
+#cuerpoContact{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 900px 600px;
+    grid-template-areas: "seccion1" "seccion2";
+
+}
+
+#seccionUno{
+    grid-area: seccion1;
+
+}
+
+
+.contact {
+    background-color: whitesmoke;
+    width: 90%;
+    font-size: 25px;
+    font-weight: 400;
+    
+  }
+  
+  .containRadio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .containFrom {
+    background-image: url(../img/granola.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800px;
+  }
+  
+ .centrado{
+     display: flex;
+     justify-content: center;
+ }
+
+  .containText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .containText input {
+    display: block;
+    width: 74%;
+    height: 50px;
+    margin-left: 13%;
+  }
+  
+  .containBoxText textarea {
+    font-size: 20px;
+    width: 74%;
+    margin-top: 1%;
+    
+  }
+  
+  .containText label {
+    margin-left: 13%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .containCheckbox {
+    display: inline;
+    margin-right: 1%;
+  }
+
+  .containLimpForm{
+        text-align: right;
+  }
+  
+  .datosCont{
+      display: flex;
+      justify-content: center;
+  }
+
+ /*--------------------Seccion 2----------------------*/ 
+
+  #secIframMap {
+    grid-area: seccion2;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "seccion1 seccion3""seccion2 seccion3";
+    
+  }
+  
+  .containWatsapp {
+    grid-area: seccion1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alineacion p {
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .numeroWhatsapp {
+    margin-left: 10%;
+  }
+  
+  .containdireccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #secIframMap p {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategrey;
+  }
+  .containWatsapp img {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .googleMapsIfram{
+      grid-area: seccion3;
+      display: flex;
+      align-items: center;
+  }
+
+  .googleMapsIfram iframe {
+    
+    
+    width: 100%;
+    
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
 
 
 }
@@ -997,6 +1165,169 @@ img{
     font-size: 20px;
   }
 
+/*--------------main contacto----------------------------*/  
+  #grillaContact{
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    grid-template-rows: 400px 100px 1500px 200px;
+    grid-template-areas: "header header header header"
+                         "nav nav nav nav"
+                         "main main main main"
+                         "footer footer footer footer ";
+
+    background-color: peru;
+
+
+}
+
+
+#cuerpoContact{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 900px 600px;
+    grid-template-areas: "seccion1" "seccion2";
+
+}
+
+#seccionUno{
+    grid-area: seccion1;
+
+}
+
+
+.contact {
+    background-color: whitesmoke;
+    width: 90%;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  .containRadio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .containFrom {
+    background-image: url(../img/granola.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800px;
+  }
+  
+ .centrado{
+     display: flex;
+     justify-content: center;
+ }
+
+  .containText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .containText input {
+    display: block;
+    width: 74%;
+    height: 50px;
+    margin-left: 13%;
+  }
+  
+  .containBoxText textarea {
+    font-size: 20px;
+    width: 74%;
+    margin-top: 1%;
+    
+  }
+  
+  .containText label {
+    margin-left: 13%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .containCheckbox {
+    display: inline;
+    margin-right: 1%;
+  }
+
+  .containLimpForm{
+        text-align: right;
+  }
+  
+  .datosCont{
+      display: flex;
+      justify-content: center;
+  }
+
+ /*--------------------Seccion 2----------------------*/ 
+
+  #secIframMap {
+    grid-area: seccion2;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "seccion1 seccion3""seccion2 seccion3";
+    
+  }
+  
+  .containWatsapp {
+    grid-area: seccion1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alineacion p {
+    text-align: justify;
+    margin-top: 15%;
+  }
+  
+  .numeroWhatsapp {
+    margin-left: 10%;
+  }
+  
+  .containdireccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  span h5 {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategrey;
+  }
+  .containWatsapp img {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .googleMapsIfram{
+      grid-area: seccion3;
+      display: flex;
+      align-items: center;
+  }
+
+  .googleMapsIfram iframe {
+    
+    
+    width: 100%;
+    
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+
 
 }
 
@@ -1418,22 +1749,26 @@ img{
 
 }
 
-.seccionUno{
+#cuerpoLogin .seccionUno{
     grid-area: area1;
-
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.seccionDos{
+#cuerpoLogin .seccionDos{
     grid-area: area2;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.containField {
+#cuerpoLogin .containField {
     background: linear-gradient(to top, #cfdef3, #e0eafc);
     width: 100%;
   }
   
-  .containLogin {
+  #cuerpoLogin  .containLogin {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1446,26 +1781,26 @@ img{
     justify-content: space-evenly;
   }
   
-  .containLogin input {
+  #cuerpoLogin .containLogin input {
     width: 90%;
     height: 50px;
     margin-left: 5%;
     margin-top: 1%;
   }
   
-  .containLogin label {
+  #cuerpoLogin .containLogin label {
     text-align: left;
     margin-top: 5%;
     margin-bottom: 1%;
     margin-left: 5%;
   }
   
-  .containA {
+  #cuerpoLogin .containA {
     margin-top: 2%;
     margin-bottom: 2%;
   }
   
-  .containRegist {
+  #cuerpoLogin .containRegist {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1477,20 +1812,20 @@ img{
     justify-content: space-evenly;
   }
   
-  .containRegist input {
+  #cuerpoLogin .containRegist input {
     width: 90%;
     height: 40px;
     margin-left: 5%;
     margin-top: 1%;
   }
   
-  .containRegist label {
+  #cuerpoLogin .containRegist label {
     text-align: left;
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 5%;
   }
-.containCheck{
+  #cuerpoLogin .containCheck{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1505,6 +1840,164 @@ img{
     color: whitesmoke;
     background-color: slategrey;
     font-size: 20px;
+  }
+
+
+/*--------------------main Contact------------------------*/
+
+#grillaContact{
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    grid-template-rows: 250px 400px 1700px 200px;
+    grid-template-areas: "nav nav nav nav"
+                         "header header header header "
+                         "main main main main"
+                         "footer footer footer footer ";
+
+    background-color: blue;
+
+
+}
+
+
+#cuerpoContact{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 900px 800px;
+    grid-template-areas: "seccion1" "seccion2";
+
+}
+
+#seccionUno{
+    grid-area: seccion1;
+
+}
+
+
+.contact {
+    background-color: whitesmoke;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  .containRadio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .containFrom {
+    background-image: url(../img/granola.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800px;
+  }
+  
+ .centrado{
+     display: flex;
+     justify-content: center;
+ }
+
+  .containText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .containText input {
+    display: block;
+    width: 74%;
+    height: 50px;
+    margin-left: 13%;
+  }
+  
+  .containBoxText textarea {
+    font-size: 20px;
+    width: 74%;
+    margin-top: 1%;
+    
+  }
+  
+  .containText label {
+    margin-left: 13%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .containCheckbox {
+    display: inline;
+    margin-right: 1%;
+  }
+
+  .containLimpForm{
+        text-align: right;
+  }
+  
+  .datosCont{
+      display: flex;
+      justify-content: center;
+  }
+
+ /*--------------------Seccion 2----------------------*/ 
+
+  #secIframMap {
+    grid-area: seccion2;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "seccion1 seccion3""seccion2 seccion3";
+    
+  }
+  
+  .containWatsapp {
+    grid-area: seccion1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alineacion p {
+    text-align: justify;
+    margin-top: 15%;
+  }
+  
+  .numeroWhatsapp {
+    margin-left: 10%;
+  }
+  
+  .containdireccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  span h5 {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategrey;
+  }
+  .containWatsapp img {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .googleMapsIfram{
+      grid-area: seccion3;
+  }
+
+  .googleMapsIfram iframe {
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
 
