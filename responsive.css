@@ -39,6 +39,65 @@ img{
 }
 
 
+@keyframes rotacionImg{
+
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes escalarHeader{
+
+    0%{
+        transform: scale(0.2 , 0.2);
+    }
+    50%{
+        transform: rotate(0.6 , 0.6);
+    }
+    100%{
+        transform: rotate(1 , 1);
+    }
+
+
+}
+
+@keyframes moverImg{
+
+    0%{
+        transform: translate(50px , 50px);
+    }
+    25%{
+        transform: translate(100px , 00px);
+    }
+    50%{
+        transform: translate(50px , -60px);
+    }
+    75%{
+        transform: translate(-30px , 60px);
+    }
+    100%{
+        transform: translate(70px , 90px);
+    }
+
+}
+
+
+
 @media only screen and (max-width: 600px){
 
     #grilla{
@@ -76,6 +135,10 @@ img{
     }
 
     #nave .contenedorImagen{
+
+        animation: moverImg;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
         width: 50%;
     }
 
@@ -708,6 +771,10 @@ img{
     }
     
     #encabezado .contenedorBanner{
+
+        animation: escalarHeader;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
         width: 100%;
         height: 350px;
         box-sizing: border-box;
@@ -737,6 +804,10 @@ img{
     }
 
     #nave .contenedorImagen{
+
+        animation: rotacionImg;
+        animation-duration: 250ms;
+        animation-iteration-count: 3;
         width: 100px;
         height: 100px;
     }
