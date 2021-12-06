@@ -17,9 +17,32 @@ ul{
 }
 
 li a:link{
-    color: white;
-    text-decoration: none;    
+    text-decoration: none;
+    font-family: "BT Trial";
+    text-transform: capitalize;
 }
+
+li a{
+
+    color: #ffffff;
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+}
+
+h2{
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family: 'Abhaya Libre', serif;
+}
+
 
 .flexiblecolum{
     display: flex;
@@ -56,8 +79,6 @@ img{
     
     #nave li a:link{
         font-size: 20px;
-        font-family: "BT Trial";
-        text-transform: capitalize;
         letter-spacing: 7px;
         
     }
@@ -144,8 +165,6 @@ img{
 
     #cuerpo .elementoLi .contenedorImgText .contenedorTexto{
         text-align: justify;
-        
-        font-family: 'Abhaya Libre', serif;
         font-size: 16px;
     }
 
@@ -189,9 +208,7 @@ img{
 
     #cuerpo .seccionDos .contenedorImgText .contenedorTexto h2{
 
-        text-align: center;
-        font-family: 'Pontano Sans', sans-serif;
-        
+        text-align: center;        
     }
 
     #cuerpo .seccionDos .contenedorImgText .contenedorImagen{
@@ -271,7 +288,7 @@ img{
         
     }
 
-    /*------------------------- Main Products ------------------*/
+ /*------------------------- Main Products ------------------*/
 
 #cuerpoProd{
     grid-area: main;
@@ -297,8 +314,9 @@ img{
 .listaAside .contenedorAux h2{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
+    font-weight: bold;
 }
 
 .listaAside .listaUl{
@@ -306,8 +324,6 @@ img{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     grid-template-rows: 60px 60px 60px;
-    font-size: 16px;
-    text-transform: capitalize;
     align-content: space-between;
     height: 200px;
 }
@@ -317,6 +333,12 @@ img{
     justify-content: center;
     align-items: center;    
 
+}
+#cuerpoProd .elementoLi a:link{
+
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .seccionProd{
@@ -656,7 +678,6 @@ img{
   
   #secIframMap p {
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: darkslategrey;
   }
   .containWatsapp img {
@@ -717,12 +738,10 @@ img{
 
         border-radius: 3%;
     }
-
+    
     #nave li a:link{
-        font-size: 20px;
-        font-family: 'Noto Sans', sans-serif;
-        text-transform: capitalize;
-        letter-spacing: 3px;        
+        font-size: 18px;
+        letter-spacing: 5px;        
     }
 
     #nave{
@@ -791,8 +810,6 @@ img{
 
     #cuerpo .elementoLi .contenedorImgText .contenedorTexto{
         text-align: justify;
-        
-        font-family: 'Abhaya Libre', serif;
         font-size: 16px;
     }
 
@@ -833,9 +850,7 @@ img{
 
     #cuerpo .seccionDos .contenedorImgText .contenedorTexto h2{
 
-        text-align: center;
-        font-family: 'Pontano Sans', sans-serif;
-        
+        text-align: center;        
     }
 
     #cuerpo .seccionDos .contenedorImgText .contenedorImagen{
@@ -955,8 +970,9 @@ img{
 .listaAside .contenedorAux h2{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
+    font-weight: bold;
 }
 
 .listaAside .listaUl{
@@ -964,8 +980,6 @@ img{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     grid-template-rows: 60px 60px 60px;
-    font-size: 20px;
-    text-transform: capitalize;
     align-content: space-between;
     height: 200px;
 }
@@ -974,7 +988,12 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;    
+}
 
+#cuerpoProd .elementoLi a:link{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
 }
 
 .seccionProd{
@@ -1301,7 +1320,7 @@ img{
   
   span h5 {
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     color: darkslategrey;
   }
   .containWatsapp img {
@@ -1335,9 +1354,10 @@ img{
 
 @media only screen and (min-width: 1201px){
 
+    
    #grilla{
     grid-template-columns: 30% 30% 30% 10%;
-    grid-template-rows: 250px 400px 2400px 200px;
+    grid-template-rows: 250px 400px 2600px 200px;
     grid-template-areas: "nav nav nav nav"
                          "header header header header "
                          "main main main main"
@@ -1345,13 +1365,13 @@ img{
 
     background-color: blue;
    }
-
+/*
    #nave li a:link{
     font-size: 25px;
     font-family: 'Noto Sans', sans-serif;
     text-transform: capitalize;
     letter-spacing: 3px;        
-}
+}*/
 
     #nave{
     width: 100%;
@@ -1359,15 +1379,20 @@ img{
     background-color: rgb(155, 156, 156);
     position: fixed;
     top: 0;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
     #nave ul{
-    width: 40%;
-    flex-direction: column;
+    width: 50%;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+
+#nave li a:link{
+    font-size: 25px;
+    letter-spacing: 7px;  
+    }
 
     #nave .contenedorImagen{
     width: 300px;
@@ -1404,7 +1429,7 @@ img{
     display: grid;
     width: 100%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1200px 300px 900px;
+    grid-template-rows: 1300px 300px 1000px;
     grid-template-areas:    "seccion1 seccion1"
                             "banner banner"
                             "seccion2 seccion2";
@@ -1446,8 +1471,6 @@ img{
 
 #cuerpo .elementoLi .contenedorImgText .contenedorTexto{
     text-align: justify;
-    
-    font-family: 'Abhaya Libre', serif;
     font-size: 16px;
 }
 
@@ -1488,9 +1511,7 @@ img{
 
 #cuerpo .seccionDos .contenedorImgText .contenedorTexto h2{
 
-    text-align: center;
-    font-family: 'Pontano Sans', sans-serif;
-    
+    text-align: center;    
 }
 
 #cuerpo .seccionDos .contenedorImgText .contenedorImagen{
@@ -1613,6 +1634,14 @@ img{
     justify-content: space-evenly;
     height: 495px;
 }
+
+#cuerpoProd li a:link{
+
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 7px;
+}
+
 .seccionProd{
     grid-area: seccion1;
     text-align: center;
@@ -1981,7 +2010,6 @@ img{
   
   span h5 {
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: darkslategrey;
   }
   .containWatsapp img {
