@@ -79,19 +79,19 @@ img{
 @keyframes moverImg{
 
     0%{
-        transform: translate(0px , 0px);
+        transform: translate(-50px , 0px);
     }
     25%{
-        transform: translate(50px , -60px);
+        transform: translate(-50px , -50px);
     }
     50%{
-        transform: translate(60px , 0px);
+        transform: translate(0px , 0px);
     }
     75%{
-        transform: translate(70px , 90px);
+        transform: translate(50px , -50px);
     }
     100%{
-        transform: translate(0px , 0px);
+        transform: translate(50px , 0px);
     }
 
 }
@@ -127,14 +127,14 @@ img{
                              "header"
                              "main"
                              "footer";
-       background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       background: linear-gradient(to bottom, #F5878D, #D68DBB, #D4A6F0, #A6ADD7, #83B6EB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
            
     }
 
     
     #nave li a:link{
-        font-size: 20px;
+        font-size: 100%;
         font-family: "BT Trial";
         text-transform: capitalize;
         letter-spacing: 7px;
@@ -152,6 +152,7 @@ img{
     #nave {
         grid-area:nav;
         align-content: flex-start;
+        background-color: powderblue;
     }
 
     #nave .contenedorImagen{
@@ -231,7 +232,7 @@ img{
         text-align: justify;
         
         font-family: 'Abhaya Libre', serif;
-        font-size: 16px;
+        font-size: 100%;
     }
 
     #cuerpo .contenedorBanner{
@@ -312,7 +313,7 @@ img{
 
     #pie ul li a:link{
 
-        font-size: 13px;
+        font-size: 100%;
         color: black;
         font-family: 'Raleway', sans-serif;
     }
@@ -328,7 +329,7 @@ img{
 
     #pie .filaDos h3{
         color: blue;
-        font-size: 20px;
+        font-size: 100%;
         font-weight: bolder;
     }
     #pie .filaDos .flexiblerow{
@@ -368,7 +369,7 @@ img{
 
 .listaAside{
     grid-area: asaid;  
-    background-color: gray;
+    background-color: #C9CAD8;
     
 }
 
@@ -382,7 +383,7 @@ img{
 .listaAside .contenedorAux h2{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 18px;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -391,7 +392,7 @@ img{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     grid-template-rows: 60px 60px 60px;
-    font-size: 16px;
+    font-size: 100%;
     text-transform: capitalize;
     align-content: space-between;
     height: 200px;
@@ -415,7 +416,7 @@ img{
 .seccionProd h2{
     height: 50px;
     border: 2px solid black;
-    font-size: 30px;
+    font-size: 100%;
     font-weight: 800;
     background-color: blanchedalmond;
 }
@@ -535,7 +536,7 @@ img{
     width: 75%;
     height: 85%;
     background-color: whitesmoke;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
     border-radius: 1%;
     justify-content: space-evenly;
@@ -567,7 +568,7 @@ img{
     width: 80%;
     height: 90%;
     background-color: whitesmoke;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
     justify-content: space-evenly;
   }
@@ -599,7 +600,7 @@ img{
     height: 35px;
     color: whitesmoke;
     background-color: slategrey;
-    font-size: 20px;
+    font-size: 100%;
   }
 
 /*------------main contact--------------------------------*/
@@ -637,7 +638,7 @@ img{
 .contact {
     background-color: whitesmoke;
     width: 90%;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
     
   }
@@ -678,7 +679,7 @@ img{
   }
   
   .containBoxText textarea {
-    font-size: 20px;
+    font-size: 100%;
     width: 74%;
     margin-top: 1%;
     
@@ -740,7 +741,7 @@ img{
   }
   
   #secIframMap p {
-    font-size: 15px;
+    font-size: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: darkslategrey;
   }
@@ -782,7 +783,8 @@ img{
                              "nav"
                              "main"
                              "footer";
-        background-color: peru;
+        background: linear-gradient(to bottom, #F5878D, #D68DBB, #D4A6F0, #A6ADD7, #83B6EB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     }
     
     
@@ -808,7 +810,7 @@ img{
     }
 
     #nave li a:link{
-        font-size: 20px;
+        font-size: 100%;
         font-family: 'Noto Sans', sans-serif;
         text-transform: capitalize;
         letter-spacing: 3px;        
@@ -886,7 +888,7 @@ img{
         text-align: justify;
         
         font-family: 'Abhaya Libre', serif;
-        font-size: 16px;
+        font-size: 100%;
     }
 
     #cuerpo .contenedorBanner{
@@ -964,7 +966,7 @@ img{
 
     #pie ul li a:link{
 
-        font-size: 13px;
+        font-size: 100%;
         color: black;
         font-family: 'Raleway', sans-serif;
     }
@@ -980,7 +982,7 @@ img{
 
     #pie .filaDos h3{
         color: blue;
-        font-size: 20px;
+        font-size: 100%;
         font-weight: bolder;
     }
     #pie .filaDos .flexiblerow{
@@ -1048,7 +1050,7 @@ img{
 .listaAside .contenedorAux h2{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 18px;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -1057,7 +1059,7 @@ img{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     grid-template-rows: 60px 60px 60px;
-    font-size: 20px;
+    font-size: 100%;
     text-transform: capitalize;
     align-content: space-between;
     height: 200px;
@@ -1081,7 +1083,7 @@ img{
 .seccionProd h2{
     height: 50px;
     border: 2px solid black;
-    font-size: 30px;
+    font-size: 100%;
     font-weight: 800;
     background-color: blanchedalmond;
 }
@@ -1191,7 +1193,7 @@ img{
     width: 75%;
     height: 85%;
     background-color: whitesmoke;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
     border-radius: 1%;
     justify-content: space-evenly;
@@ -1223,7 +1225,7 @@ img{
     width: 80%;
     height: 90%;
     background-color: whitesmoke;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
     justify-content: space-evenly;
   }
@@ -1255,7 +1257,7 @@ img{
     height: 35px;
     color: whitesmoke;
     background-color: slategrey;
-    font-size: 20px;
+    font-size: 100%;
   }
 
 /*--------------main contacto----------------------------*/  
@@ -1292,7 +1294,7 @@ img{
 .contact {
     background-color: whitesmoke;
     width: 90%;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
   }
   
@@ -1332,7 +1334,7 @@ img{
   }
   
   .containBoxText textarea {
-    font-size: 20px;
+    font-size: 100%;
     width: 74%;
     margin-top: 1%;
     
@@ -1393,7 +1395,7 @@ img{
   }
   
   span h5 {
-    font-size: 25px;
+    font-size: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: darkslategrey;
   }
@@ -1436,11 +1438,12 @@ img{
                          "main main main main"
                          "footer footer footer footer ";
 
-    background-color: blue;
+    background: linear-gradient(to bottom, #F5878D, #D68DBB, #D4A6F0, #A6ADD7, #83B6EB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
    }
 
    #nave li a:link{
-    font-size: 25px;
+    font-size: 120%;
     font-family: 'Noto Sans', sans-serif;
     text-transform: capitalize;
     letter-spacing: 3px;        
@@ -1449,7 +1452,7 @@ img{
     #nave{
     width: 100%;
     grid-area: nav;
-    background-color: rgb(155, 156, 156);
+    background-color: powderblue;
     position: fixed;
     top: 0;
     justify-content: center;
@@ -1461,7 +1464,7 @@ img{
     justify-content: space-evenly;
     align-items: center;
 }
-    #nave ul li{
+    #nave li:hover{
         animation: texto;
         animation-duration: 1s;
         animation-iteration-count: 1;
@@ -1547,7 +1550,7 @@ img{
     text-align: justify;
     
     font-family: 'Abhaya Libre', serif;
-    font-size: 16px;
+    font-size: 100%;
 }
 
 #cuerpo .contenedorBanner{
@@ -1624,7 +1627,7 @@ img{
 
 #pie ul li a:link{
 
-    font-size: 25px;
+    font-size: 100%;
     color: black;
     font-family: 'Raleway', sans-serif;
 }
@@ -1642,7 +1645,7 @@ img{
 
 #pie .filaDos h3{
     color: rgb(216, 226, 157);
-    font-size: 30px;
+    font-size: 100%;
     font-weight: bolder;
 }
 #pie .filaDos .flexiblerow{
@@ -1720,7 +1723,7 @@ img{
 .seccionProd h2{
     height: 50px;
     border: 2px solid black;
-    font-size: 30px;
+    font-size: 100%;
     font-weight: 800;
     background-color: blanchedalmond;
 }
@@ -1874,7 +1877,7 @@ img{
     width: 75%;
     height: 85%;
     background-color: whitesmoke;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
     border-radius: 1%;
     justify-content: space-evenly;
@@ -1906,7 +1909,7 @@ img{
     width: 80%;
     height: 90%;
     background-color: whitesmoke;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
     justify-content: space-evenly;
   }
@@ -1938,7 +1941,7 @@ img{
     height: 35px;
     color: whitesmoke;
     background-color: slategrey;
-    font-size: 20px;
+    font-size: 100%;
   }
 
 
@@ -1978,7 +1981,7 @@ img{
     background-color: whitesmoke;
     width: 90%;
     margin-left: 5%;
-    font-size: 25px;
+    font-size: 100%;
     font-weight: 400;
   }
   
@@ -2018,7 +2021,7 @@ img{
   }
   
   .containBoxText textarea {
-    font-size: 20px;
+    font-size: 100%;
     width: 74%;
     margin-top: 1%;
     
@@ -2079,7 +2082,7 @@ img{
   }
   
   span h5 {
-    font-size: 25px;
+    font-size: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: darkslategrey;
   }
